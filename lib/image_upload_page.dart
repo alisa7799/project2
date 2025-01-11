@@ -61,13 +61,13 @@ class _ImageUploadPageState extends State<ImageUploadPage> {
         final data = jsonDecode(responseBody);
 
         result = """
-약품 이름: ${data['name'] ?? '정보 없음'}
-복용 방법: ${data['usage'] ?? '정보 없음'}
-성분: ${data['ingredients'] ?? '정보 없음'}
-효과: ${data['effects'] ?? '정보 없음'}
-부작용: ${data['side_effects'] ?? '정보 없음'}
-주의사항: ${data['precautions'] ?? '정보 없음'}
-""";
+        약품 이름: ${data['name'] ?? '정보 없음'}
+        복용 방법: ${data['usage'] ?? '정보 없음'}
+        성분: ${data['ingredients'] ?? '정보 없음'}
+        효과: ${data['effects'] ?? '정보 없음'}
+        부작용: ${data['side_effects'] ?? '정보 없음'}
+        주의사항: ${data['precautions'] ?? '정보 없음'}
+        """;
       } else {
         result = "분석 실패: 상태 코드 ${response.statusCode}";
       }
