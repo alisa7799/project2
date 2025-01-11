@@ -11,7 +11,7 @@ buildscript {
         mavenCentral() // Maven Central 저장소
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.5.2'
+        classpath 'com.android.tools.build:gradle:8.2.1'
     }
 }
 
